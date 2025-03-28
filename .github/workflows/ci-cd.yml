@@ -15,7 +15,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: './presentation/biertan-presentation/'
+        working-directory: 'presentation/biertan-presentation/'
     
     strategy:
       matrix:
@@ -34,6 +34,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: 'presentation/biertan-presentation/package-lock.json'
     
     - name: Clean install
       run: npm ci
