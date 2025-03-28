@@ -12,10 +12,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: 'presentation/biertan-presentation/'
     
     strategy:
       matrix:
@@ -25,9 +21,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-
-    - name: Check directory location
-      run: ls -R
     
     - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
