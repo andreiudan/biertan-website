@@ -1,7 +1,7 @@
 {
   "name": "biertan-presentation",
   "version": "0.1.0",
-  "homepage": "https://andreiudan.github.io/biertan-website/presentation/biertan-presentation",
+  "homepage": "https://andreiudan.github.io/biertan-website",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
