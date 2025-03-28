@@ -12,6 +12,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: './server/' 
 
     strategy:
       matrix:
@@ -26,6 +30,8 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        cache-dependency-path: './server/package-lock.json'
     
     - name: Clean install
       run: npm ci
