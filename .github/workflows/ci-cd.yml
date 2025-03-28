@@ -34,7 +34,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: 'subdir/presentation/biertan-presentation/package-lock.json'
     
     - name: Clean install
       run: npm ci
