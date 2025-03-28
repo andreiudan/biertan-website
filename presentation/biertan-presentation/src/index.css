@@ -3,6 +3,7 @@ body {
   font-family: Martel;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
 }
 
 code {
@@ -12,21 +13,21 @@ code {
 
 @font-face{
   font-family: 'Martel';
-  src: local('Martel-Regular') local('Martel Regular'), url('./fonts/Martel-Regular.ttf') format('ttf');
+  src: local('Martel-Regular') local('Martel Regular'), url('./assets/fonts/Martel-Regular.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Martel';
-  src: local('Martel-Light') local('Martel Light'), url(./fonts/Martel-Light.ttf) format('ttf');
+  src: local('Martel-Light') local('Martel Light'), url(./assets/fonts/Martel-Light.ttf) format('ttf');
   font-weight: lighter;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Martel';
-  src: local('Martel-Bold') local('Martel Bold'), url(./fonts/Martel-Bold.ttf) format('ttf');
+  src: local('Martel-Bold') local('Martel Bold'), url(./assets/fonts/Martel-Bold.ttf) format('ttf');
   font-weight: bold;
   font-style: normal;
 }

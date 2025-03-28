@@ -2,8 +2,8 @@ import './footer.css';
 
 function Footer() {
     return(
-        <div className='footer'>
-            <div className="logo">
+        <footer className='footer'>
+            <div className="logoFooter">
                 <img src="images/StemaBiertan_smaller60.png" alt="Stema"></img>
                 <div className='name'>
                     <p>Comuna</p>
@@ -40,7 +40,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 
