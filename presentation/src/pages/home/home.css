@@ -1,9 +1,77 @@
-.home{
-    width: 100%;
-    height: 100%;
-    background-color: aqua;
+p {
+    margin: 0;
+    padding: 0;
+}
 
+.home-background {
     img{
         width: 100%;
     }
+
+    .welcome-message {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        font-size: 42px;
+        color: #EEEEEE;
+        transform: translate(-50%, -50%);
+    }
+}
+    
+.shortcuts {
+    background-color: #EEEEEE;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    filter: drop-shadow(0px 4px 12px #00000030);
+    margin-bottom: 12px;
+
+
+    .shortcut-button{
+        display: flex;
+        flex-direction: column;
+        /*margin: -36px 36px 0 36px;*/
+        margin-top: -36px;
+        align-items: center;
+        gap: 18px;
+
+        .button-icon {
+            border-radius: 50%;
+            background-color: #961717;
+            outline: rgba(241, 241, 241, .5) solid 5px;
+            width: 78px;
+            height: 78px;
+            top: 0;
+            filter: drop-shadow(0px 4px 4px #00000031);
+            box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25);
+            position: relative;
+            transition: top linear 0.2s;
+        }
+
+        p{
+            font-size: 24px;
+            padding-bottom: 12px;
+        }
+    }
+
+    .shortcut-button:hover {
+        cursor: pointer;
+
+        .button-icon {
+            top: -10px;
+        }
+        
+        p{
+            text-decoration: underline;
+        }
+    }
+}
+
+.shortcuts .shortcut-button:first-child {
+    margin-left: 48px;
+}
+
+.shortcuts .shortcut-button:last-child {
+    margin-right: 48px;
 }
