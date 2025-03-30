@@ -1,4 +1,4 @@
-import './Home.css';
+import './home.css';
 import background from './../../assets/images/Biertan.jpg';
 
 function Home() {
