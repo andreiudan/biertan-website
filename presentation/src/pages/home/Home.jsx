@@ -1,5 +1,5 @@
-import "./Home.css";
-import background from "./../../assets/images/Biertan.jpg";
+import './Home.css';
+import background from './../../assets/images/Biertan.jpg';
 
 function Home() {
   return (
