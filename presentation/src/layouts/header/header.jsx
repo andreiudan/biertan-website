@@ -1,14 +1,11 @@
-import "../../layouts/header/header.css";
+import './header.css';
+import logo from './../../assets/images/StemaBiertan_smaller80.png';
 
 function Header() {
   return (
     <header className="header">
       <div className="logoName">
-        <img
-          className="logoHeader"
-          src="images/StemaBiertan_smaller80.png"
-          alt="logo"
-        ></img>
+        <img className="logoHeader" src={logo} alt="logo"></img>
         <p className="primaryName">Biertan</p>
       </div>
 
