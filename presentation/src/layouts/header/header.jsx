@@ -1,4 +1,4 @@
-import '../../layouts/header/header.css';
+import './header.css';
 import logo from './../../assets/images/StemaBiertan_smaller80.png';
 
 function Header() {
