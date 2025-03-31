@@ -1,20 +1,24 @@
+import React from 'react';
 import './TownHallAdministration.css';
-import EmployeePreview from '../employee-preview/EmployeePreview';
+import EmployeePreview from '../employee-preview/EmployeePreview.tsx';
 
 function TownHallAdministration() {
-  const administration = [
+  const administration: {id: number, profilePicPath: string, employeeName: string, employeePosition: string}[] = [
     {
-      profilePicPath: 0,
+      id: 0,
+      profilePicPath: '',
       employeeName: 'Mircea Dragomir',
       employeePosition: 'Primar',
     },
     {
-      profilePicPath: 0,
+      id: 1,
+      profilePicPath: '',
       employeeName: 'Mircea Dragomir',
       employeePosition: 'Prima',
     },
     {
-      profilePicPath: 0,
+      id: 2,
+      profilePicPath: '',
       employeeName: 'Mircea Dragomir',
       employeePosition: 'Prim',
     },
@@ -25,7 +29,7 @@ function TownHallAdministration() {
       <div className="town-hall-administration-content">
         {administration.map((employee) => (
           <EmployeePreview
-            key={employee}
+            key={employee.id}
             picturePath={employee.profilePicPath}
             name={employee.employeeName}
             position={employee.employeePosition}

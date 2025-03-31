@@ -1,3 +1,4 @@
+import React from 'react';
 import './EmployeePreview.css';
 import defaultProfilePicture from '../../assets/images/profile.png';
 

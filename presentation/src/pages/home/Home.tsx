@@ -1,5 +1,5 @@
 import React from 'react';
-import './home.css';
+import './Home.css';
 import background from '../../assets/images/Biertan.jpg';
 
 function Home() {

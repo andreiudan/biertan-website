@@ -1,5 +1,5 @@
 import React from 'react';
-import './header.css';
+import './Header.css';
 import logo from './../../assets/images/StemaBiertan_smaller80.png';
 import { NavLink } from 'react-router-dom';
 
