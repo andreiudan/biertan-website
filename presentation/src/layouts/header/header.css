@@ -3,11 +3,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: 12px;
-    padding-right: 18px;
     padding-top: 6px;
     background-color: #b7b7b7;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
 
     p{
@@ -16,10 +15,24 @@
     }
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #585858;
+}
+
+a:active {
+    color: cornflowerblue;
+}
+
 .logoHeader{
     margin-bottom: -48px;
     width: 84px;
     padding-right: 12px;
+    margin-left: 12px;
 }
 
 .primaryName{
@@ -55,6 +68,7 @@
     align-self: baseline;
     justify-content: center;
     flex: 1;
+    margin-right: 18px;
 
     #verticalLine {
         width: 1px;
