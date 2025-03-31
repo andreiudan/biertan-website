@@ -1,5 +1,6 @@
+import React from 'react';
 import './home.css';
-import background from './../../assets/images/Biertan.jpg';
+import background from '../../assets/images/Biertan.jpg';
 
 function Home() {
   return (

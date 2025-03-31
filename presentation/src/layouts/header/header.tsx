@@ -1,5 +1,6 @@
+import React from 'react';
 import './header.css';
-import logo from './../../assets/images/StemaBiertan_smaller80.png';
+import logo from '../../assets/images/StemaBiertan_smaller80.png';
 
 function Header() {
   return (
