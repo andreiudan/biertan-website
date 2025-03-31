@@ -1,6 +1,5 @@
-import React from 'react';
 import './TownHallAdministration.css';
-import EmployeePreview from '../employee-preview/EmployeePreview.tsx';
+import EmployeePreview from '../employee-preview/EmployeePreview';
 
 function TownHallAdministration() {
   const administration: {id: number, profilePicPath: string, employeeName: string, employeePosition: string}[] = [

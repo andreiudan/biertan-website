@@ -1,4 +1,3 @@
-import React from 'react';
 import './Footer.css';
 import logo from '../../assets/images/StemaBiertan_smaller60.png';
 import facebook from '../../assets/images/facebook.png';

@@ -1,7 +1,6 @@
-import React from 'react';
 import './TownHall.css';
 import Background from '../../assets/images/Primarie.png';
-import ContentCard from '../../components/content-card/ContentCard.tsx';
+import ContentCard from '../../components/content-card/ContentCard';
 
 function TownHall() {
   return (

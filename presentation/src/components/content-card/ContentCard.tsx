@@ -1,8 +1,7 @@
-import React from 'react'
 import './ContentCard.css';
 import { NavLink } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
-import TownHallAdministration from '../town-hall-administration/TownHallAdministration.tsx';
+import TownHallAdministration from '../town-hall-administration/TownHallAdministration';
 
 function ContentCard() {
   return (

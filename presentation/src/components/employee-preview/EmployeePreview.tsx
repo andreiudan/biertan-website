@@ -1,8 +1,13 @@
-import React from 'react';
 import './EmployeePreview.css';
 import defaultProfilePicture from '../../assets/images/profile.png';
 
-function EmployeePreview({ name, position, picturePath }) {
+interface EmployeePreviewProps {
+  name: string;
+  position: string;
+  picturePath?: string; 
+}
+
+function EmployeePreview({ name, position, picturePath }: EmployeePreviewProps) {
   return (
     <div className="employee-preview">
       <img
