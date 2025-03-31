@@ -21,7 +21,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-    - uses: actions/checkout@v4
+      uses: actions/checkout@v4
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
@@ -31,10 +31,10 @@ jobs:
         cache-dependency-path: 'presentation/package-lock.json'
 
     - name: Clean install    
-    - run: npm ci
+      run: npm ci
 
     - name: Runing the tests
-    - run: npm test
+      run: npm test
 
     - name: Run app
-    - run: npm run
+      run: npm run
