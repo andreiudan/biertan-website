@@ -1,0 +1,10 @@
+.town-hall-content {
+    display: flex;
+    flex-direction: column;
+
+    .town-hall-background{
+        img{ 
+            width: 100%;
+        }
+    }
+}
