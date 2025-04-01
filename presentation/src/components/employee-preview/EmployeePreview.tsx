@@ -1,6 +1,6 @@
 import './EmployeePreview.css';
 import defaultProfilePicture from '../../assets/images/profile.png';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 
 interface EmployeePreviewProps {
   name: string;

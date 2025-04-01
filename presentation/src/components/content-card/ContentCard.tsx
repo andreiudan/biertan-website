@@ -1,5 +1,5 @@
 import './ContentCard.css';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router';
 import TownHallAdministration from '../town-hall-administration/TownHallAdministration';
 import Breadcrumb from '../breadcrumb/Breadcrumb';
 import ContentCardSidebar from '../content-card-sidebar/ContentCardSidebar';

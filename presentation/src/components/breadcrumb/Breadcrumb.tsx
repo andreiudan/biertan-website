@@ -1,5 +1,5 @@
 import './Breadcrumb.css';
-import { useLocation, NavLink } from 'react-router-dom';
+import { useLocation, NavLink } from 'react-router';
 
 const definedLocations: {path: string, name: string}[] = [{
     path: '/',

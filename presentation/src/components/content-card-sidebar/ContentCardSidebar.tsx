@@ -1,6 +1,6 @@
 import React from 'react';
 import './ContentCardSidebar.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router';
 
 interface SidebarProps {
     path: string;

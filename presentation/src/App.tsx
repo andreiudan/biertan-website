@@ -3,7 +3,7 @@ import Footer from './layouts/footer/Footer';
 import Header from './layouts/header/Header';
 import Home from './pages/home/Home';
 import TownHall from './pages/town-hall/TownHall';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router';
 
 function App() {
   return (
