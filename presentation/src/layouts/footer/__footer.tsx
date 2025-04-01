@@ -1,10 +1,10 @@
-import './footer.css';
-import logo from './../../assets/images/StemaBiertan_smaller60.png';
-import facebook from './../../assets/images/facebook.png';
-import instagram from './../../assets/images/instagram.png';
-import phone from './../../assets/images/phone.png';
-import email from './../../assets/images/email.png';
-import location from './../../assets/images/location.png';
+import './Footer.css';
+import logo from '../../assets/images/StemaBiertan_smaller60.png';
+import facebook from '../../assets/images/facebook.png';
+import instagram from '../../assets/images/instagram.png';
+import phone from '../../assets/images/phone.png';
+import email from '../../assets/images/email.png';
+import location from '../../assets/images/location.png';
 
 function Footer() {
   return (
