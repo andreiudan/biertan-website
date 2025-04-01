@@ -12,10 +12,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: 'presentation/'
     
     strategy:
       matrix:
@@ -35,6 +31,9 @@ jobs:
     
     - name: Clean install
       run: npm install
+
+    - name: LS
+      run: ls -a
 
     - name: Run the tests and generate coverage report
       run: npm test -- --coverage
