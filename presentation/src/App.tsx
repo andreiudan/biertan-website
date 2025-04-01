@@ -15,7 +15,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/biertan-website' element={<Home />} />
-            <Route path='/primarie' element={<TownHall />} />
+            <Route path='/primarie/*' element={<TownHall />} />
           </Routes>
         </div>
 

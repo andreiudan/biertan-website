@@ -1,0 +1,37 @@
+.breadcrumb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-left: 18px;
+    margin-top: 12px;
+
+    a{
+        text-decoration: underline;
+        font-size: 1.1rem;
+    }
+}
+
+.breadcrumb a:last-child{
+    text-decoration: none;
+    cursor: default;
+}
+
+.breadcrumb a:last-child:active{
+    color: inherit;
+}
+
+.breadcrumb a:last-child:hover{
+    color: inherit;
+}
+
+.breadcrumb a:not(:first-child)::before{
+    content: url('./../../assets/images/next.png');
+    padding-right: 12px;
+}
+
+.breadcrumb-entry {
+    display: flex;
+    align-items: center;
+}
+

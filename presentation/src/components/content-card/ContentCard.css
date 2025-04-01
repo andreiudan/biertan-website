@@ -11,30 +11,6 @@
     min-height: 70%;
 }
 
-.sidebar {
-    gap: 18px;
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
-    background-color: #10528E;
-    border-radius: 12px;
-
-    a{
-        font-size: 22px;
-        padding-right: 24px;
-        padding-left: 24px;
-    }
-
-    #horizontal-line{
-        height: 1px;
-        background-color: #FFFFFF70;
-    }
-}
-
-.sidebar a:first-child {
-    padding-top: 12px;
-}
-
 .card-content {
     display: flex;
     flex-direction: column;
@@ -47,9 +23,11 @@
         margin-bottom: 24px;
         align-self: flex-start;
         gap: 12px;
-
-        a:not(a:last-child){
+        
+        a{
             text-decoration: underline;
         }
     }
+
+    
 }

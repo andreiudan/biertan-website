@@ -1,0 +1,23 @@
+.sidebar {
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background-color: #10528E;
+    border-radius: 12px;
+
+    a{
+        font-size: 22px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    #horizontal-line{
+        height: 1px;
+        background-color: #FFFFFF70;
+    }
+}
+
+.sidebar a:first-child {
+    padding-top: 12px;
+}

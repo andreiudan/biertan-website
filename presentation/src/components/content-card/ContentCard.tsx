@@ -1,25 +1,21 @@
 import './ContentCard.css';
-import { NavLink } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
 import TownHallAdministration from '../town-hall-administration/TownHallAdministration';
+import Breadcrumb from '../breadcrumb/Breadcrumb';
+import ContentCardSidebar from '../content-card-sidebar/ContentCardSidebar';
 
-function ContentCard() {
+interface SidebarProps {
+  path: string, 
+  name: string
+}
+
+function ContentCard({ sidebarProps }: { sidebarProps: SidebarProps[] }) {
   return (
     <div className="card">
-      <div className="sidebar">
-        <NavLink to="/primarie">Administratie</NavLink>
-        <div id="horizontal-line"></div>
-        <NavLink to="/">Organigrama</NavLink>
-        <div id="horizontal-line"></div>
-        <NavLink to="/">Stare Civila</NavLink>
-        <div id="horizontal-line"></div>
-      </div>
+      <ContentCardSidebar sidebarEntries={sidebarProps}/>
 
       <div className="card-content">
-        <div className="current-path">
-          <NavLink to="/">Acasa</NavLink>
-          <NavLink to="/primarie">Primarie</NavLink>
-        </div>
+        <Breadcrumb />
 
         <Routes>
           <Route path="/" element={<TownHallAdministration />}></Route>
