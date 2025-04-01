@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/biertan-website/static/css/main.b6bc3467.css",
-    "main.js": "/biertan-website/static/js/main.1ead843d.js",
+    "main.css": "/biertan-website/static/css/main.22fad5a0.css",
+    "main.js": "/biertan-website/static/js/main.04dea6f7.js",
     "static/js/453.738b291f.chunk.js": "/biertan-website/static/js/453.738b291f.chunk.js",
+    "static/media/Primarie.png": "/biertan-website/static/media/Primarie.c90549f52b16356f6590.png",
     "static/media/Biertan.jpg": "/biertan-website/static/media/Biertan.52898e4f7bfa9e1fa485.jpg",
     "static/media/Martel-Light.ttf": "/biertan-website/static/media/Martel-Light.7570ed67d263da191006.ttf",
     "static/media/Martel-Regular.ttf": "/biertan-website/static/media/Martel-Regular.583920b99f611400f3b8.ttf",
     "static/media/Martel-Bold.ttf": "/biertan-website/static/media/Martel-Bold.cc0d88cb0f584c24eac0.ttf",
     "static/media/StemaBiertan_smaller80.png": "/biertan-website/static/media/StemaBiertan_smaller80.11ea97c035cbac9c1558.png",
     "static/media/StemaBiertan_smaller60.png": "/biertan-website/static/media/StemaBiertan_smaller60.995ca493cf76c50868ca.png",
+    "static/media/profile.png": "/biertan-website/static/media/profile.5faf09a7795d28bf5a2b.png",
     "index.html": "/biertan-website/index.html",
-    "main.b6bc3467.css.map": "/biertan-website/static/css/main.b6bc3467.css.map",
-    "main.1ead843d.js.map": "/biertan-website/static/js/main.1ead843d.js.map",
+    "main.22fad5a0.css.map": "/biertan-website/static/css/main.22fad5a0.css.map",
+    "main.04dea6f7.js.map": "/biertan-website/static/js/main.04dea6f7.js.map",
     "453.738b291f.chunk.js.map": "/biertan-website/static/js/453.738b291f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6bc3467.css",
-    "static/js/main.1ead843d.js"
+    "static/css/main.22fad5a0.css",
+    "static/js/main.04dea6f7.js"
   ]
 }
