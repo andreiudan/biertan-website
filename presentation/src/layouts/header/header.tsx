@@ -1,17 +1,19 @@
-import React from 'react';
-import './header.css';
-import logo from '../../assets/images/StemaBiertan_smaller80.png';
+import './Header.css';
+import logo from './../../assets/images/StemaBiertan_smaller80.png';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
     <header className="header">
-      <div className="logoName">
+      <NavLink to="/" className="logoName">
         <img className="logoHeader" src={logo} alt="logo"></img>
         <p className="primaryName">Biertan</p>
-      </div>
+      </NavLink>
 
       <div className="navigation">
-        <p>Primarie</p>
+        <NavLink to="/primarie">
+          <p>Primarie</p>
+        </NavLink>
         <p>Acomodare</p>
         <p>Localnici</p>
         <p>Vizitatori</p>
