@@ -34,7 +34,11 @@ jobs:
         cache-dependency-path: 'presentation/package-lock.json'
     
     - name: Clean install
-      run: npm ci
+      run: npm install
+
+    - name: LS
+      run: cd ./src/layouts/footer | 
+        ls -a
 
     - name: Run the tests and generate coverage report
       run: npm test -- --coverage
