@@ -11,7 +11,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ununtu-latest
 
     defaults:
       run:
@@ -34,7 +34,7 @@ jobs:
         cache-dependency-path: 'presentation/package-lock.json'
     
     - name: Clean install
-      run: npm ci
+      run: npm install
 
     - name: Run the tests and generate coverage report
       run: npm test -- --coverage
