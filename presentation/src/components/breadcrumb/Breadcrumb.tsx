@@ -1,43 +1,62 @@
+import React from 'react';
 import './Breadcrumb.css';
 import { useLocation, NavLink } from 'react-router';
 
-const definedLocations: {path: string, name: string}[] = [{
+const definedLocations: { path: string; name: string }[] = [
+  {
     path: '/',
-    name: 'Acasa'
-},
-{
+    name: 'Acasa',
+  },
+  {
     path: '/primarie',
-    name: 'Primarie'
-},
-{
+    name: 'Primarie',
+  },
+  {
     path: '/organigrama',
-    name: 'Organigrama'
-},
-{
+    name: 'Organigrama',
+  },
+  {
     path: '/stare-civila',
-    name: 'Stare Civila'
-}];
+    name: 'Stare Civila',
+  },
+  {
+    path: '/administratie',
+    name: 'Administratie',
+  },
+  {
+    path: '/descriere-post',
+    name: 'Descriere',
+  },
+];
 
 function Breadcrumb() {
-    const location = useLocation().pathname;
+  const location = useLocation().pathname;
+  let locations: string[] = location.split('/');
 
-    let createBreadcrumbDynamically = () => {
-        let locations: string[] = location.split('/');
+  const createBreadcrumbDynamically = () => {
+    let path: string = '';
 
-        if(locations[locations.length-1] === ''){
-            locations.pop();
-        }
-
-        return (locations.map((loc) => (
-            <NavLink key={loc} className='breadcrumb-entry' to={'/' + loc}>{definedLocations.find(x => x.path === '/' + loc)?.name}</NavLink>
-        )));
+    if (locations[locations.length - 1] === '') {
+      locations.pop();
     }
 
-    return (
-        <nav aria-label='breadcrumb' className='breadcrumb'>
-            {createBreadcrumbDynamically()}
-        </nav>
-    );
+    return locations.map((loc) => (
+      <React.Fragment key={loc}>
+        <NavLink
+          className="breadcrumb-entry"
+          to={(path += loc === '' ? '' : '/' + loc)}
+        >
+          {definedLocations.find((x) => x.path === '/' + loc)?.name}
+        </NavLink>
+      </React.Fragment>
+    ));
+  };
+
+  return (
+    <nav aria-label="breadcrumb" className="breadcrumb">
+      {createBreadcrumbDynamically()}
+    </nav>
+  );
 }
 
 export default Breadcrumb;

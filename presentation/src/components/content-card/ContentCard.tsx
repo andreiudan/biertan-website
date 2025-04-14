@@ -1,25 +1,27 @@
 import './ContentCard.css';
-import { Route, Routes } from 'react-router';
-import TownHallAdministration from '../town-hall-administration/TownHallAdministration';
 import Breadcrumb from '../breadcrumb/Breadcrumb';
 import ContentCardSidebar from '../content-card-sidebar/ContentCardSidebar';
+import { ReactNode } from 'react';
 
 interface SidebarProps {
-  path: string, 
-  name: string
+  path: string;
+  name: string;
 }
 
-function ContentCard({ sidebarProps }: { sidebarProps: SidebarProps[] }) {
+interface Props {
+  sidebarProps: SidebarProps[];
+  children: ReactNode;
+}
+
+function ContentCard({ sidebarProps, children }: Props) {
   return (
     <div className="card">
-      <ContentCardSidebar sidebarEntries={sidebarProps}/>
+      <ContentCardSidebar sidebarEntries={sidebarProps} />
 
       <div className="card-content">
         <Breadcrumb />
 
-        <Routes>
-          <Route path="/" element={<TownHallAdministration />}></Route>
-        </Routes>
+        {children}
       </div>
     </div>
   );

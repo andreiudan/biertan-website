@@ -1,0 +1,41 @@
+.separator-line {
+    width: 1px;
+    background-color: #00000035;
+    height: inherit;
+}
+
+.job-name {
+    color: #10528E;
+}
+
+.job-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 18px;
+}
+
+.job-details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-self: self-start;
+    padding-right: 12px;
+
+    p{
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        text-align: left;
+        font-size: 1.1rem;
+    }  
+}
+
+.job-details p:nth-of-type(n+2) {
+    line-height: 1.8;
+}
+
+.employee-informations{
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+}

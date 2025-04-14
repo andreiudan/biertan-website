@@ -1,9 +1,7 @@
 import './TownHallOrganizationalChart.css';
 
 function TownHallOrganizationalChart() {
-    return (
-        <></>
-    );
+  return <></>;
 }
 
 export default TownHallOrganizationalChart;

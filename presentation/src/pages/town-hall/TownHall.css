@@ -1,6 +1,10 @@
 .town-hall-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-image: url('../../assets/images/Primarie.png');
+    background-repeat: no-repeat;
+    background-size: 100% clamp(30dvw, 35dvw, 70dvw);
 
     .town-hall-background{
         img{ 

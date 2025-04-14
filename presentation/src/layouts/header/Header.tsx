@@ -1,6 +1,7 @@
 import './Header.css';
 import logo from './../../assets/images/StemaBiertan_smaller80.png';
 import { NavLink } from 'react-router';
+import i18next from 'i18next';
 
 function Header() {
   return (
@@ -21,11 +22,29 @@ function Header() {
       </div>
 
       <div className="languages">
-        <p>Romana</p>
+        <p
+          onClick={() => {
+            i18next.changeLanguage('ro');
+          }}
+        >
+          Romana
+        </p>
         <div id="verticalLine"></div>
-        <p>English</p>
+        <p
+          onClick={() => {
+            i18next.changeLanguage('en');
+          }}
+        >
+          English
+        </p>
         <div id="verticalLine"></div>
-        <p>Deutsch</p>
+        <p
+          onClick={() => {
+            i18next.changeLanguage('de');
+          }}
+        >
+          Deutsch
+        </p>
       </div>
     </header>
   );
